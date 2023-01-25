@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Chart from "./components/Chart/Chart";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
@@ -35,7 +34,6 @@ function App() {
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler}/>
-      
       <Expenses items={expenses}/>
     </div>
   );
