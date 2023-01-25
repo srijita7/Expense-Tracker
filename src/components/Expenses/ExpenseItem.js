@@ -4,6 +4,7 @@ import "./ExpenseItem.css";
 
 function ExpenseItem(props) {
   return (
+    <li>
       <Card className="expense-item">
         {console.log(props)}
         <ExpenseDate date={props.date} />
@@ -12,6 +13,7 @@ function ExpenseItem(props) {
           <p className="expense-item__price">₹ {props.amount}</p>
         </div>
       </Card>
+    </li>
   );
 }
 export default ExpenseItem;
